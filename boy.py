@@ -122,3 +122,5 @@ async def create_ticket(ctx: SlashContext):
 async def on_select(ctx: SlashContext):
     category = ctx.selected_options[0]
     description = "Descrição do ticket"  # Você pode substituir isso por uma descrição
+
+       token = os.getenv('DISCORD_TOKEN')
