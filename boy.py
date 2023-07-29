@@ -5,6 +5,9 @@ from discord_slash.model import ButtonStyle
 from discord_slash.utils.manage_components import create_button, create_actionrow, create_select, create_select_option
 import sqlite3
 import datetime
+from dotenv import load_dotenv
+
+load_dotenv()
 
 bot = commands.Bot(command_prefix="!")
 slash = SlashCommand(bot, sync_commands=True)
