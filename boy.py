@@ -6,9 +6,9 @@ from discord_slash.utils.manage_components import create_button, create_actionro
 import sqlite3
 import datetime
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
-
 bot = commands.Bot(command_prefix="!")
 slash = SlashCommand(bot, sync_commands=True)
 
